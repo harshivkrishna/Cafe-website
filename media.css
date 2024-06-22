@@ -1,0 +1,155 @@
+/* Media queries */
+
+@media screen and (max-width:1024px) {
+    .section_container{
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    nav{
+        padding: 0 24px;
+    }
+
+    label .menu_btn{
+        display: block;
+    }
+    nav ul{
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: all 0.4s ease ;
+    }
+
+    #click:checked ~ ul{
+        left: 0;
+    }
+
+    #click:checked ~ label .close_btn{
+        display: block;
+    }
+
+    #click:checked ~ label .menu_btn{
+        display: none;
+    }
+
+    
+
+    nav ul li{
+        display: block;
+        padding: 8px 12px;
+        width: 48%;
+        margin: 24px auto;
+    }
+
+    nav ul li a{
+        color: #1b1b1b;
+    }
+
+    .hero_container{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom:32px;
+    }
+
+    .hero_section .image_section img{
+        width: 80%;
+    }
+
+    .hero_container .text_section{
+        max-width: 100%;
+    }
+
+    .about_container{
+        flex-direction: column;
+    }
+
+    .about_container .text_section{
+        max-width: 100%;
+    }
+
+    .about_container .text_section p{
+        text-align: center;
+    }
+
+    .section_container .services_item{
+        width: 40%;
+    }
+
+    .why_us .why_container{
+        flex-direction: column;
+    }
+    
+    .why_container .why_items{
+        width: 100%;
+    }
+
+    .gallery_container .gallery_items{
+        width: calc(100% /2 -32px);
+    }
+
+    .contact_container{
+        flex-direction: column-reverse;
+    }
+    .contact_text .contact_items{
+        margin: 10px 0;
+    }
+
+    .contact_container .contact_form{
+        max-width: 100%;
+    }
+
+    .footer_section{
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer_section .useful_link{
+        text-align: start;
+    }
+}
+
+@media screen and (max-width:426px) {
+
+    .nav_logo a h2{
+        font-size: 15px;
+    }
+    nav{
+        padding: 0 14px;
+    }
+
+    .hero_section{
+        height: 80vh;
+    }
+
+    .hero_container .text_section h2{
+        font-size: 32px;
+    }
+
+    .hero_container .text_section h3{
+        font-size: 28px;
+    }
+
+    .image_section img{
+        height: 100px;
+    }
+    .button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .section_container .services_item{
+        width: 100%;
+    }
+
+    .gallery_container .gallery_items{
+        width: 100%;
+    }
+    footer{
+        font-weight: 400;
+    }
+}
